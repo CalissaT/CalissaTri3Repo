@@ -46,6 +46,7 @@ Is paper or red tape blocking digital empowerment? Are there such barriers at De
 - Del Norte has restrictions
 - It is blocking digital empowerment as it blocks students from accessing certain resources that they may need
 - In school, only certain websites that show explicit content should be blocked
+
 ## Data Structures Project
 
 ### Menu Challenge
