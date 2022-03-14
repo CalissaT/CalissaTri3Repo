@@ -25,6 +25,7 @@
 | ---- | ---- |
 |1: Easier to access data to do research or satisfy curiosity, 2: Connect with people around the globe without actually having to travel there 3: Find fun activities to do like games, tv, etc | 1: Highly addictive and at times distracting 2: Data thieves and hackers can trick you into giving them information 3: Sometimes causes people to forget about the real world |
 
+
 2. Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?
 - I sometimes play video games/scroll on my phone instead of doing my homework
 - If you have little self control, getting sucked into technology/games can be very disruptive
