@@ -7,4 +7,4 @@
 
 | 5.1-5.2 | Menu Challenge | Christmas Tree | 
 | --- | --- | --- |
-| [Wiki](https://github.com/CalissaT/CalissaTri3Repo/wiki/5.1-and-5.2) |
+| [Wiki](https://github.com/CalissaT/CalissaTri3Repo/wiki/5.1-and-5.2) | [Wiki](https://github.com/CalissaT/CalissaTri3Repo/wiki/Data-Structures-Projects)| [Wiki](https://github.com/CalissaT/CalissaTri3Repo/wiki/Create-Task)
