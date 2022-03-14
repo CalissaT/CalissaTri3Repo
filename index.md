@@ -193,7 +193,7 @@ def buildMenu(banner, options):
 if __name__ == "__main__":
     menu()
 ```
-It doesn't fully work but I'm not sure why it doesn't. 
+It doesn't fully work but I'm not sure why it doesn't because I'm bad at coding. It's okay though, if I stare at it enough it'll eventually make sense to me. 
 
 ### Christmas Tree
 
