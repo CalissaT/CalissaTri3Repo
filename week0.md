@@ -1,12 +1,6 @@
-layout: page
-title: "TT0"
-permalink: /TT0/
+[Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/1)
 
-#TT0
-[Review Ticket](https://github.com/CalissaT/CalissaTri3Repo)
-
-## 5.1 - 5.2
-### 5.1
+## 5.1
 
 1. UAVs/Drones are used in search & rescue, aerial photography, and for hobbies. However, there are many unintended usages. Also, there are many military usages. What do people think about drones?
 - Could be a violation of privacy (spying, etc)
@@ -19,7 +13,7 @@ permalink: /TT0/
 - Beating a level on a game
 
 3. Automated telephone trees were designed to save employers money, but also reduce hold time for customers. Innovations in phone trees, voice recognition, or keypads often enables customers to find answers quickly. What are innovation you would like to see in phone tree? Will this phone tree transfer you to relevant department during office hours? Will it always enable you the opportunity for human response?
-- Sometimes the robot doesn't understand what you're saying, so more advanced voice recognition 
+- Sometimes the robot doesn't understand what you're saying, so more advanced voice recognition
 
 
 1. Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
@@ -28,18 +22,17 @@ permalink: /TT0/
 | ---- | ---- |
 |1: Easier to access data to do research or satisfy curiosity, 2: Connect with people around the globe without actually having to travel there 3: Find fun activities to do like games, tv, etc | 1: Highly addictive and at times distracting 2: Data thieves and hackers can trick you into giving them information 3: Sometimes causes people to forget about the real world |
 
-
 2. Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?
 - I sometimes play video games/scroll on my phone instead of doing my homework
 - If you have little self control, getting sucked into technology/games can be very disruptive
 
-### 5.2
+## 5.2
 
 How does someone empower themself in a digital world?
 - Utilize the resources that the digital world provides
 - You can create a platform to share ideas with others
 - Stay safe on the internet
-- Connect with others in the digital world 
+- Connect with others in the digital world
 
 How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS.
 - Sharing their resources with those not empowered
@@ -51,9 +44,7 @@ Is paper or red tape blocking digital empowerment? Are there such barriers at De
 - It is blocking digital empowerment as it blocks students from accessing certain resources that they may need
 - In school, only certain websites that show explicit content should be blocked
 
-## Data Structures Project
-
-### Menu Challenge
+## Menu Challenge
 (Made with the help of Mr. M)
 ```
 # menuy.py - function style menu
@@ -197,7 +188,7 @@ def buildMenu(banner, options):
 if __name__ == "__main__":
     menu()
 ```
-It doesn't fully work but I'm not sure why it doesn't because I'm bad at coding. It's okay though, if I stare at it enough it'll eventually make sense to me. 
+It doesn't fully work but I'm not sure why it doesn't.
 
 ### Christmas Tree
 
@@ -229,30 +220,3 @@ This code will print a tree that looks like:
 ```
 
 It does this using three variables: a, b, and n. A determines where the spaces are put. After it prints every line, we subtract one from the variable so that it will print one less space on each line. B determines where the stars are put, we add two to this variable after each line so that it prints two more stars each line. N determines how many lines the tree will be. Since we picked 5, the tree will be 5 lines tall. 
-
-## Create Task
-
-### Guessing Game
-
-```
-def numberGame():
-  counter = 5
-  while counter > 0:
-    guessNum = int(input("Guess the number..."))
-    if guessNum>13:
-      print("Too high!")
-      counter=counter-1
-    elif guessNum == 13:
-      print("Correct!")
-      counter=0
-    else:
-      print("Too low!")
-      counter=counter-1
-
-numberGame()
-
-```
-
-I wanted to add more to this so that it matches all the college board requirements:
-- Make a list of words and it uses this list (guess word game)
-- Guess words and letters instead of numbers
