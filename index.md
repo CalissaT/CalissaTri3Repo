@@ -9,7 +9,7 @@ layout: default
 ## Replit
 [Link](https://replit.com/@CalissaTyrrell/CalissaTri3Repo#.replit)
 
-<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@CalissaTyrrell/CalissaTri3Repo#.replit"  >
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@CalissaTyrrell/CalissaTri3Repo#.replit/lite=true"  >
 
 </iframe>
 
