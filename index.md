@@ -6,6 +6,8 @@ layout: default
 
 {% include_relative README.md %}
 
+Welcome! This is the GitHub pages for Calissa's Data Structures class!
+
 ## Replit
 [Link](https://replit.com/@CalissaTyrrell/CalissaTri3Repo#.replit)
 
