@@ -30,6 +30,8 @@ layout: default
 - I sometimes play video games/scroll on my phone instead of doing my homework
 - If you have little self control, getting sucked into technology/games can be very disruptive
 
+***
+
 ## 5.2
 
 How does someone empower themself in a digital world?
@@ -86,6 +88,8 @@ Should it be corrected?
 
 What would you or should you do to produce a better outcome?
 - Before releasing a feature such as this, test it on different face shapes, sizes, and colors.
+
+***
 
 ## 5.4
 
