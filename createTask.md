@@ -1,3 +1,9 @@
+---
+layout: default
+---
+
+{% include navigation.html %}
+
 ## Guessing Game
 
 ```
