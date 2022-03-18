@@ -6,6 +6,8 @@ layout: default
 
 [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/2)
 
+# Week 1
+***
 ## Lists and Loops
 ```
 #hack1
