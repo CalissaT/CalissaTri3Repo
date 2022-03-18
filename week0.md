@@ -1,49 +1,5 @@
 [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/1)
 
-## 5.1
-
-1. UAVs/Drones are used in search & rescue, aerial photography, and for hobbies. However, there are many unintended usages. Also, there are many military usages. What do people think about drones?
-- Could be a violation of privacy (spying, etc)
-- Used for movies, pictures, etc
-- Military usage (detecting planes, people, etc)
-
-2. Dopamine plays a role in how we feel pleasure. Video games and Social media are shown to impact people chemically. However, statistically some people's computer time may be greater than their sleep time. There are positives on games and social media. Name some?
-- When your code finally works
-- Watching a funny tv show
-- Beating a level on a game
-
-3. Automated telephone trees were designed to save employers money, but also reduce hold time for customers. Innovations in phone trees, voice recognition, or keypads often enables customers to find answers quickly. What are innovation you would like to see in phone tree? Will this phone tree transfer you to relevant department during office hours? Will it always enable you the opportunity for human response?
-- Sometimes the robot doesn't understand what you're saying, so more advanced voice recognition
-
-
-1. Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
-
-| Benefits | Harmful Effects |
-| ---- | ---- |
-|1: Easier to access data to do research or satisfy curiosity, 2: Connect with people around the globe without actually having to travel there 3: Find fun activities to do like games, tv, etc | 1: Highly addictive and at times distracting 2: Data thieves and hackers can trick you into giving them information 3: Sometimes causes people to forget about the real world |
-
-2. Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?
-- I sometimes play video games/scroll on my phone instead of doing my homework
-- If you have little self control, getting sucked into technology/games can be very disruptive
-
-## 5.2
-
-How does someone empower themself in a digital world?
-- Utilize the resources that the digital world provides
-- You can create a platform to share ideas with others
-- Stay safe on the internet
-- Connect with others in the digital world
-
-How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS.
-- Sharing their resources with those not empowered
-- Educate and teach others how to use technology
-- Spreading awareness and raising funds to build computer centers
-
-Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?
-- Del Norte has restrictions
-- It is blocking digital empowerment as it blocks students from accessing certain resources that they may need
-- In school, only certain websites that show explicit content should be blocked
-
 ## Menu Challenge
 (Made with the help of Mr. M)
 ```
