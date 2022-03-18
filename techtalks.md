@@ -1,3 +1,9 @@
+---
+layout: default
+---
+
+{% include navigation.html %}
+
 ## 5.1
 
 1. UAVs/Drones are used in search & rescue, aerial photography, and for hobbies. However, there are many unintended usages. Also, there are many military usages. What do people think about drones?
