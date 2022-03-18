@@ -4,7 +4,7 @@ layout: default
 
 {% include navigation.html %}
 
-# Calissa's Trimester Three Repository
+# Calissa's Trimester 3 GitHub page
 
 Welcome! This is the GitHub pages for Calissa's Data Structures class!
 
