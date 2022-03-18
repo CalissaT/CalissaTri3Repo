@@ -6,6 +6,9 @@ layout: default
 
 [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/1)
 
+# Week 0
+***
+
 ## Menu Challenge
 (Made with the help of Mr. M)
 ```
