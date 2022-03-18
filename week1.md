@@ -1,3 +1,9 @@
+---
+layout: default
+---
+
+{% include navigation.html %}
+
 [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/2)
 
 ## Lists and Loops
