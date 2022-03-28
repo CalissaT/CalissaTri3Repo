@@ -102,4 +102,55 @@ What would you or should you do to produce a better outcome?
 2) What about Del Norte crowdsourcing? Could your final project be better with crowdsourcing?
 - Voting for representatives at the school
 - Stats class polling students for their projects 
+***
 
+## 5.5
+
+Notes:
+- Software makes the experience, hardware makes it happen
+- Software has license
+- Patents and software licensing can conflict
+- Close source means its protected
+- Open source means its unprotected (jeopardizing the patent)
+  - Ex: GPL, Creative Commons
+
+1. When you create a GitHub repository it requests a license type. Review the license types in relationship to this Tech Talk and make some notes in GitHub pages.
+- Most of the licensing options that Github provides are open source. (Ex: GNU General Public License, Apache License, MIT License, BSD 2-Clause/3-Clause)
+
+2. Make a license for your personal and Team project. Document license you picked and why.
+- We picked an MIT license because it is commonly used
+
+## 5.6
+Notes:
+- Personal Identifiable Information (PII)
+- Protecting yourself and your information
+- Two-factor authentication
+- Two public keys, one private key, and modulo arithmetic encrypts your info
+
+1. Describe PII you have seen on project in CompSci Principles.
+- Names and emails for the database
+
+2. What are your feelings about PII and your exposure?
+- A lot of my information is probably out there in the world
+- I keep my important information pretty safe
+- Sometimes I'm scared to talk to people on the internet in case they dox me
+
+3. Describe good and bad passwords? What is another step that is used to assist in authentication.
+- A good password is hard to guess or decode
+- Websites/programs often make minimum requirements in terms of length, symbols, and capitalization to make it harder to guess
+
+4. Try to describe Symmetric and Asymmetric encryption.
+
+| Symmetric Encryption | Asymmetric Encryption |
+| --- | --- |
+| Uses one key to both encrypt and decrypt information | Uses pairs of keys, a public and private, to encrypt and decrypt information |
+
+5. Provide and example of encryption we used in deployment.
+- HTTPS
+
+6. Describe a phishing scheme you have learned about the hard way. Describe some other phishing techniques.
+
+When I was little, I was playing Minecraft on a public server and a random player said if I gave him the password to my account he'd give me a bunch of stuff from his account. I gave him the password, in which then he blew up my house and stole all of my stuff, making me really depressed. Luckily he didn't change the email to something else or do any further damage, but I quickly changed my password after realizing he scammed me. Other ways people can phish:
+- Emails pretending to be someone else
+- Phone calls pretending to be a bank
+- Fake prizes and winning free stuff
