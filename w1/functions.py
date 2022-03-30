@@ -44,7 +44,7 @@ def tester():
   printWhile(0)
   print("Recursive loop:")
   printRecursive(0)
-tester()
+#tester()
 
 #hack 3
 def fibonacci(n):
@@ -64,4 +64,4 @@ def run():
     for i in range(nums):
       print(fibonacci(i))
   
-run()
+#run()
