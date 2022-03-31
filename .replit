@@ -1,2 +1,2 @@
 language="python3"
-run="python w3/right.py"
+run="python mainmenu.py"

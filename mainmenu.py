@@ -92,18 +92,6 @@ def print_week3():
               move = "player"
               win = False
               right.make_board(board)
-              right.first_player_move(board, move)
-              print("where you moved ^")
-              print("-------------")
-              print("-------------")
-              print("where computer moved v")
-              right.computer_move(board, move)
-              right.player_next_move(board, move)             
-              print("where you moved ^")
-              print("-------------")
-              print("-------------")
-              print("where computer moved v")
-              right.computer_next_move(board, move)
               right.end_game(win, move)
             elif option == 4:
                 break

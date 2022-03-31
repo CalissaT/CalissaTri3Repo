@@ -13,33 +13,7 @@ def make_board(board):
 
 move = "player"
 
-# get player's first move
-def first_player_move(board, move):
-      # get the player's first move
-      position = input("where would you like to move? ")
-      position = int(position)
-      
-      # ensure the player's move is valid
-      while (position < 1 or position > 9):
-          position = input("please give a position between 1 and 9 ")
-          position = int(position)
-        
-      board[position] = 'X'
-      make_board(board)
-      move = "computer"
-
-# get computer's move
-def computer_move(board, move):
-      computer_position = random.randint(1,9)
-      while board[computer_position] == 'X':
-          computer_position = random.randint(1,9)
-  
-      board[computer_position] = 'O'
-  
-      make_board(board)
-      move = "player"
-
-  # get players next move
+  # get player move
 def player_next_move(board, move):
       position = input("Please input your next move: ")
       position = int(position)
@@ -51,7 +25,8 @@ def player_next_move(board, move):
       board[position] = 'X'
       make_board(board)
       move = "computer"
-# get computer's next move
+  
+# get computer move
 def computer_next_move(board, move):
       computer_position = random.randint(1,9)
       while (computer_position < 1 or computer_position > 9 or board[computer_position] == 'X' or board[computer_position] == 'O'):
@@ -61,6 +36,7 @@ def computer_next_move(board, move):
   
       make_board(board)
       move = "player"
+  
  # check if either computer or player won
 def check_if_won(board):
   
@@ -86,8 +62,12 @@ def check_if_won(board):
 win = False
 
 def end_game(win, move):
-  for number_of_moves in range(7):
-      #while (win == False):
+  for number_of_moves in range(9):
+    if (win == True):
+        break
+    if (number_of_moves == 8 and win == False):
+          print("tie")
+          break
     if (move == "player"):
       player_next_move(board, move)
       move = "computer"
@@ -101,25 +81,10 @@ def end_game(win, move):
       computer_next_move(board, move)
       move = "player"
       win = check_if_won(board)
-    if number_of_moves == 6 and win == False:
-          print("tie")
-          break
-      
-
+    
+    
 if __name__ == "__main__":
   make_board(board)
-  first_player_move(board, move)
-  print("where you moved ^")
-  print("-------------")
-  print("-------------")
-  print("where computer moved v")
-  # computer_move(board, move)
-  # player_next_move(board, move)
-  # print("where you moved ^")
-  # print("-------------")
-  # print("-------------")
-  # print("where computer moved v")
-  computer_next_move(board, move)
   end_game(win, move)
   
   
