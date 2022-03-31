@@ -2,6 +2,7 @@ from w0 import menu, tree
 from w1 import functions
 from w2 import math_OOP, factorial
 from w3 import tree2, palindrome, right
+from w3.right import colors
 
 # print statement for each week
 def print_week0():
@@ -91,18 +92,21 @@ def print_week3():
               board = {1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7', 8: '8', 9: '9'}
               move = "player"
               win = False
+              right.colors
+              X = colors.tie + 'X' + colors.normal
+              O = colors.tie + 'X' + colors.normal
               right.make_board(board)
-              right.end_game(win, move)
+              right.end_game(win, move, X, O)
             elif option == 4:
-                break
+              break
             # Exit menu
             elif option == 10:
-                print('Exciting! Thank you! Good Bye...')
-                exit() # exit out of the (infinite) while loop
+              print('Exciting! Thank you! Good Bye...')
+              exit() # exit out of the (infinite) while loop
             else:
-                print('Invalid option. Please enter a number between 1 and 4.')
+              print('Invalid option. Please enter a number between 1 and 4.')
         except ValueError:
-            print('Invalid input. Please enter an integer input.')
+          print('Invalid input. Please enter an integer input.')
 
 # call functions based on input choice
 def runOptions():
