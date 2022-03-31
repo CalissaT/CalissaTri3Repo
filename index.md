@@ -26,5 +26,5 @@ Welcome! This is the GitHub pages for Calissa's Data Structures class!
 
 | Week 2 | Week 3 |
 | ---- | ----- |
-| [Link](https://calissat.github.io/CalissaTri3Repo/week2)  ,  [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/3)| -- |
+| [Link](https://calissat.github.io/CalissaTri3Repo/week2)  ,  [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/3)|[Link]()  ,  [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/4) |
 | Create presentation for crossover team, organize files, understand classes, 5.5-5.6| -- |
