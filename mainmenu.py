@@ -8,9 +8,9 @@ from w3.right import colors
 def print_week0():
     while True:
         try:
-            print("\n1: menu")
-            print("2: treedraw")
-            print("4: back to main menu")
+            print("\n1: Menu")
+            print("2: Treedraw")
+            print("4: Back to main menu")
             option = int(input('Enter your choice: '))
             if option == 1:
                 menu.menu()
@@ -20,7 +20,7 @@ def print_week0():
                 break
             # Exit menu
             elif option == 10:
-                print('Exciting! Thank you! Good Bye...')
+                print('Adios!')
                 exit() # exit out of the (infinite) while loop
             else:
                 print('Invalid option. Please enter a number between 1 and 4.')
@@ -30,9 +30,9 @@ def print_week0():
 def print_week1():
     while True:
         try:
-            print("\n1: fibonacci")
-            print("2: lists and loops")
-            print("3: back to main menu")
+            print("\n1: Fibonacci")
+            print("2: Lists and loops")
+            print("3: Back to main menu")
             option = int(input('Enter your choice: '))
             if option == 1:
                 functions.run()
@@ -42,7 +42,7 @@ def print_week1():
                 break
             # Exit menu
             elif option == 10:
-                print('Exciting! Thank you! Good Bye...')
+                print('Adios!')
                 exit() # exit out of the (infinite) while loop
             else:
                 print('Invalid option. Please enter a number between 1 and 4.')
@@ -65,7 +65,7 @@ def print_week2():
                 break
             # Exit menu
             elif option == 10:
-                print('Exciting! Thank you! Good Bye...')
+                print('Adios!')
                 exit() # exit out of the (infinite) while loop
             else:
                 print('Invalid option. Please enter a number between 1 and 4.')
@@ -76,10 +76,10 @@ def print_week2():
 def print_week3():
   while True:
         try:
-            print("\n1: tree")
-            print("2: palindrome")
-            print("3: tictactoe")
-            print("4: back to main menu")
+            print("\n1: Tree")
+            print("2: Palindrome")
+            print("3: Tictactoe")
+            print("4: Back to main menu")
             option = int(input('Enter your choice: '))
             if option == 1:
                 tree2.drawTree()
@@ -113,11 +113,11 @@ def runOptions():
     # infinite loop to accept/process user menu choice
     while True:
         try:
-            print("\n0: week 0")
-            print("1: week 1")
-            print("2: week 2")
-            print("3: week 3")
-            print("10: exit")
+            print("\n0: Week 0")
+            print("1: Week 1")
+            print("2: Week 2")
+            print("3: Week 3")
+            print("10: Exit")
             option = int(input('Enter your choice: '))
             if option == 0:
                 print_week0()
