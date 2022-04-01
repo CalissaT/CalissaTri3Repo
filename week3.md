@@ -7,6 +7,14 @@ layout: default
 [Review Ticket](https://github.com/CalissaT/CalissaTri3Repo/issues/4)
 
 # Week 3
+
+## Algorithmic Final
+<p align="center">
+<iframe width="560" height="315" src="https://youtu.be/HciKzwsB-dc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+</p>  
+
+***
+
 ***
 ## Rock, Paper, Scissors
 My crossover contribution was making a rock paper scissors game.
