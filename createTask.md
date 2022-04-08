@@ -9,12 +9,14 @@ layout: default
 
 Requirements
 
-- [ x ] Instructions for input from user
-- [ x ] Use of at least one list or other collection type
-- [ x ] Procedure that contributes to program's intended purpose
-- [ x ] Algorithm that includes sequencing, selection, and interation
-- [ x ] Calls to your student-developed procedure
-- [ x ] Instructions for output based on input
+- [x] Instructions for input from user
+- [x] Use of at least one list or other collection type
+- [x] Procedure that contributes to program's intended purpose
+- [x] Algorithm that includes sequencing, selection, and interation
+- [x] Calls to your student-developed procedure
+- [x] Instructions for output based on input
+
+
 ```
 #clears console
 import subprocess
