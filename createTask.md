@@ -7,6 +7,9 @@ layout: default
 ## Word Guessing Game
 ***
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1FNRMotunkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+***
 Requirements
 
 - [x] Instructions for input from user
@@ -79,27 +82,4 @@ word_game()
 ```
 
 
-## Guessing Game
 
-```
-def numberGame():
-  counter = 5
-  while counter > 0:
-    guessNum = int(input("Guess the number..."))
-    if guessNum>13:
-      print("Too high!")
-      counter=counter-1
-    elif guessNum == 13:
-      print("Correct!")
-      counter=0
-    else:
-      print("Too low!")
-      counter=counter-1
-
-numberGame()
-
-```
-
-I wanted to add more to this so that it matches all the college board requirements:
-- Make a list of words and it uses this list (guess word game)
-- Guess words and letters instead of numbers
