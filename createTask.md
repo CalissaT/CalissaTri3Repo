@@ -146,3 +146,83 @@ game_run(5)
 
 3aiii) The program asks wether or not the user has played the game. If they have, they will not be shown the rules and will continue to the game. If they haven't, they will be shown the rules before playing the game. The program then prompts the user to enter a number 1-5 to select the word. Once the word is selected, the user will input their guess. If they are correct, they receive a congratulations message. If they are incorrect, they receive the option for a hint.
 
+***
+
+3bi)
+
+```
+word_list = {
+  "1": ["horse", "This is a mammal", "This is a herbivore", "This is a farm animal", "It is commonly ridden"],
+  "2": ["pineapple", "It is edible", "It is featured in the show Spongebob Squarepants", "It is yellow", "It is a tropical fruit"],
+  "3": ["water", "It is in soda", "It is tasteless", "It is clear", "You need it to survive"],
+  "4": ["rice", "It is a crop", "It is a grain", "It is gluten free", "It's in sushi"],
+  "5": ["laptops", "You can use these to code", "Companies such as Apple and Microsoft produce these", "They have keyboards", "It rhymes with commuter" ]
+}
+```
+3bii) 
+```
+global hint_num    
+  hint_num = 0 
+  while lives > 0:
+    global hint
+    #sets word equal to the first term in whatever number list the user picked
+    word = word_list[str(word_num)][0]
+    #prompts user to guess the word
+    guess = input("Guess the word... ")  
+    #user guesses right, they win
+    if guess == word: 
+      print(f"Congratulations! The word was {word}!")
+      lives = 0
+    #user guessed incorrectly  
+    else:
+      lives = lives - 1
+      #user is out of lives, they lose  
+      if lives == 0:
+        print("You ran out of tries..." + f"The word was {word}")
+```
+
+3biii) The name of the dictionary is word_list. It is named this because it is a dictionary that contains all the words the user is going to guess along with the hints inside of a list. 
+
+3biv) The lists in word_lists represent the words the user is trying to guess along with the hints they receive. The word is at index 0, while the hints are index 1-4. The key, the numbers, represent the number the user inputs before the game starts, picking the word they will try to guess. 
+
+3bv) The dictionary greatly decreases the length and repetitiveness of the program. Without it, there would have to be a code segment for every single word and hint. In addition, it would be much more difficult to loop the program. Given the length and unnecessary complexity of the program, a lot of factors of the game would need to be adjusted in order for it to loop correctly. 
+
+***
+
+3ci) 
+```
+def start_game():
+  #loops until user enters input within range
+  global word_num
+  #if word_num is within the range
+  if (word_num > 0) & (word_num < 6): 
+    print("Word selected!")
+    print("_____")
+  #word_num isn't in the range, so it will prompt the user to try again 
+  else:
+    print("Please enter a valid input!") 
+    sleep(1)
+    subprocess.call("clear", shell=True)
+```
+
+3ii) 
+```
+  while True:
+    word_num = int(input("Pick a number 1-5 "))  
+    if (word_num > 0) & (word_num < 6): 
+      start_game()
+      break
+      #word_num isn't in the range, so it will prompt the user to try again 
+    else:
+      start_game()
+```
+
+3iii) The function start_game() takes the user input word_num and verifies whether or not it is within the range using an if-else statement. This is crucial to the game running correctly, as the game relies on certain inputs to create their respective output. 
+
+3iv) First, the program gathers the user input from the global variable word_num. Then, it tests if it is greater than 0 and less than 6, which ensures it is a number 1 through 5, with the if statement. If the number is within this range, the function will print "Word selected!" and a line. However, if the function is not in the range (a negative number or a number 6 or greater), it will move on to the else condition. The else condition prompts the user to enter a valid input, waits one second, then clears the console to reduce confusion and a pile-up of text. 
+
+***
+
+3di) 
+
+3dii) 
