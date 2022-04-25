@@ -223,6 +223,14 @@ def start_game():
 
 ***
 
-3di) 
+3di) The first call, "if (word_num > 0) & (word_num < 6):" executes the if condition of start_game. After the code within if condition of start_game is executed, it will break the while True loop and the game will begin
 
-3dii) 
+3di2) The second call, else, executes the else of start_game again. It then returns to the begging of the while True loop, and will execute the code within the loop until the user selects a valid input and the game can begin. 
+
+3dii) The first call tests wether or not the user input is less than 6 and greater than 0, which is a range of 1-5. 
+
+3dii2) The second call tests if the user input is either negative or a number of 6 or greater. 
+
+3diii) If the user has entered an input ranging from 1-5, they will be notified that their word has been selected and a line will be printed. The while True loop is then broken and the game begins. 
+
+3diii2) If the user has entered an invalid input, they will be notified that their input was invalid and that they need to enter another one. The message will then clear after 1 second, and the while Loop with execute again and prompt them to enter an input 1-5.
