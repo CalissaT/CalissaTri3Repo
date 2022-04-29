@@ -7,10 +7,10 @@ layout: default
 ## Word Guessing Game
 ***
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZaYyKAOWlA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2ziW3N02Cis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ***
-Requirements
+[Requirements](https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf)
 
 - [x] Instructions for input from user
 - [x] Use of at least one list or other collection type
@@ -140,11 +140,11 @@ game_run(5)
 
 ## Written Responses
 
-3ai) The program is designed to entertain people while still challenging their brains. This was done through the form of a word guessing game, which is very popular amongst people of all ages.
+3ai) The program is designed to make learning key AP Computer Science Principles terms fun by turning it into a word guessing game. It makes studying less scary and helps with understanding the content better, as the user has to really understand each term to guess it correctly.
 
-3aii) The user if first asked wether or not they've played the game. Users then  must enter a number 1-5 for the game to start. The user must guess the selected word in 5 tries or less. If they successfully accomplish this task, they win the game. However, if they use all 5 guesses they lose. 
+3aii) The user is first asked whether or not they've played the game. Users then must enter a number 1-5 for the game to start. The user must guess the selected word in 5 tries or less. If they successfully accomplish this task, they win the game. However, if they use all 5 guesses they lose. 
 
-3aiii) The program asks wether or not the user has played the game. If they have, they will not be shown the rules and will continue to the game. If they haven't, they will be shown the rules before playing the game. The program then prompts the user to enter a number 1-5 to select the word. Once the word is selected, the user will input their guess. If they are correct, they receive a congratulations message. If they are incorrect, they receive the option for a hint.
+3aiii) The program asks whether or not the user has played the game. If they have not, they will be shown the rules and the game will start after. The program then prompts the user to enter a word choice from 1 to 51 or select 0 to exit. The user then will input their guess. If they are incorrect, they receive the option for a hint. If they are correct, they receive a congratulations message.
 
 ***
 
@@ -161,17 +161,41 @@ word_list = {
 ```
 3bii) 
 ```
-global hint_num    
+def get_hint():
+  global hint
+  #user wants a hint, hint is printed
+  if hint == "yes":
+    print(word_list[str(word_choice)][hint_num])
+  #user doesn't want hint prompted to guess again  
+  else:
+    print("Suit yourself!")
+
+```
+
+3biii) The name of the dictionary is word_list. It is named this because it is a dictionary that contains all the words the user is going to guess along with the hints inside of a list. 
+
+3biv) The lists in word_lists represent the words the user is trying to guess along with the hints they receive. The word is at index 0, while the hints are at index 1-4. The numbers represent the user inputs from before the game, which picks the word they will try to guess. 
+
+3bv) The dictionary greatly decreases the length and repetitiveness of the program. Without it, there would have to be a code segment for every single word and hint and with 51 terms, it would get very lengthy. In addition, it would be much more difficult to loop a program that includes 100 if-else statements compared to 4. In addition, having all the terms and hints inside of a dictionary makes it easy to make revisions, as all the data is in one spot and can be easily adjusted without the rest of the code needing to be changed. 
+
+***
+
+3ci) 
+```
+def game_run(num, lives):
+  global hint_num    
   hint_num = 0 
+  #loops while lives are above 0
   while lives > 0:
     global hint
     #sets word equal to the first term in whatever number list the user picked
-    word = word_list[str(word_num)][0]
+    word = word_list[str(num)][0]
     #prompts user to guess the word
     guess = input("Guess the word... ")  
     #user guesses right, they win
     if guess == word: 
       print(f"Congratulations! The word was {word}!")
+      print("_____")
       lives = 0
     #user guessed incorrectly  
     else:
@@ -179,58 +203,42 @@ global hint_num
       #user is out of lives, they lose  
       if lives == 0:
         print("You ran out of tries..." + f"The word was {word}")
+        print("_____")
+      #user still has lives, they are asked if they want a hint  
+      else:
+        hint = input("Bummer, incorrect. Would you like a hint? (yes/no) ")
+        print("_____")
+        hint_num = hint_num + 1
+        get_hint() 
 ```
 
-3biii) The name of the dictionary is word_list. It is named this because it is a dictionary that contains all the words the user is going to guess along with the hints inside of a list. 
-
-3biv) The lists in word_lists represent the words the user is trying to guess along with the hints they receive. The word is at index 0, while the hints are index 1-4. The key, the numbers, represent the number the user inputs before the game starts, picking the word they will try to guess. 
-
-3bv) The dictionary greatly decreases the length and repetitiveness of the program. Without it, there would have to be a code segment for every single word and hint. In addition, it would be much more difficult to loop the program. Given the length and unnecessary complexity of the program, a lot of factors of the game would need to be adjusted in order for it to loop correctly. 
-
-***
-
-3ci) 
+3cii) 
 ```
-def start_game():
-  #loops until user enters input within range
-  global word_num
-  #if word_num is within the range
-  if (word_num > 0) & (word_num < 6): 
-    print("Word selected!")
-    print("_____")
-  #word_num isn't in the range, so it will prompt the user to try again 
-  else:
-    print("Please enter a valid input!") 
-    sleep(1)
-    subprocess.call("clear", shell=True)
-```
-
-3ii) 
-```
+  if __name__ == "__main__":
+  lives = 5
+  welcome()   
   while True:
-    word_num = int(input("Pick a number 1-5 "))  
-    if (word_num > 0) & (word_num < 6): 
-      start_game()
-      break
-      #word_num isn't in the range, so it will prompt the user to try again 
-    else:
-      start_game()
+    word_choice = get_input()
+    if word_choice == 0 :
+      break  
+    game_run(word_choice, lives)
+
 ```
 
-3iii) The function start_game() takes the user input word_num and verifies whether or not it is within the range using an if-else statement. This is crucial to the game running correctly, as the game relies on certain inputs to create their respective output. 
+3ciii) The function game_run, runs the actual game itself. It takes the user input, the guess, and determines whether or not it is correct. If the guess is incorrect, then the user is prompted to input wether or not they want a hint. If the guess is correct, the user is displayed a congratulations message
 
-3iv) First, the program gathers the user input from the global variable word_num. Then, it tests if it is greater than 0 and less than 6, which ensures it is a number 1 through 5, with the if statement. If the number is within this range, the function will print "Word selected!" and a line. However, if the function is not in the range (a negative number or a number 6 or greater), it will move on to the else condition. The else condition prompts the user to enter a valid input, waits one second, then clears the console to reduce confusion and a pile-up of text. 
+3iv) All code is within a while loop, in which the game loops while lives is greater than zero, meaning that they user still has lives. It then sets the variable word equal to the number the user inputs earlier before this code is executed. The user is then prompted to input their guess. If their guess is correct, they are congratulated. Otherwise, the user is incorrect, they lose one live. The program then determines whether or not the user has lives remaining. If the user has run out of lives, the word is revealed and they lose the game. Otherwise, the user is prompted of wether or not they want a hint, adds one value to hint_num so the user recieves a new hint, and then the function get_hint() is executed.
 
 ***
 
-3di) The first call, "if (word_num > 0) & (word_num < 6):" executes the if condition of start_game. After the code within if condition of start_game is executed, it will break the while True loop and the game will begin
+3di) 
 
-3di2) The second call, else, executes the else of start_game again. It then returns to the begging of the while True loop, and will execute the code within the loop until the user selects a valid input and the game can begin. 
+3di2) 
 
-3dii) The first call tests wether or not the user input is less than 6 and greater than 0, which is a range of 1-5. 
+3dii) 
 
-3dii2) The second call tests if the user input is either negative or a number of 6 or greater. 
+3dii2) 
 
-3diii) If the user has entered an input ranging from 1-5, they will be notified that their word has been selected and a line will be printed. The while True loop is then broken and the game begins. 
+3diii) 
 
-3diii2) If the user has entered an invalid input, they will be notified that their input was invalid and that they need to enter another one. The message will then clear after 1 second, and the while Loop with execute again and prompt them to enter an input 1-5.
+3diii2) 
