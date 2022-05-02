@@ -334,14 +334,14 @@ def game_run(num, lives):
 
 ***
 
-3di) 
+3di) The first call runs game_run with the parameters word_choice, the number the user selects to pick a word at the beginning of the game, and lives. For this example, word_choice equals 1. 
 
-3di2) 
+3di2) The second call runs game_run with the same parameters, however, word_choice can be a different word based on the number the user selects. For this example, word_choice equals 20. 
 
-3dii) 
+3dii) The first call tests whether or not the user has greater than 0 lives, and if it does, the function will run. In addition, the function uses the word_choice, 1, and accesses the list value associated with 1. 
 
-3dii2) 
+3dii2) The second call tests whether or not the user has greater than 0 lives, and if it does, the function will run. In addition, the function uses the word_choice, 20, and accesses the list value associated with 1. 
 
-3diii) 
+3diii) If word_choice is 1, the user is trying to guess the term syntax error. All hints that could be printed would be: "It is a part of Big Idea 1, Creative Development", "A type of error", "Typically this error causes code not to run", "Occurs when code violates rules of programming language." 
 
-3diii2) 
+3diii2) If word_choice is 20, the user is trying to guess the term library. All hints that could be printed would be: "It is a part of Big Idea 3, Algorithms and Programming", "Helps to make coding easier", "Contains classes, code, and helpful data", "And a collection of procedures useful in creating programs." 
